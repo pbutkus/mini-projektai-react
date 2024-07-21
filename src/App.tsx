@@ -58,7 +58,7 @@ function App() {
             >
               <div className="w-full aspect-video overflow-hidden">
                 <img
-                  src="/thumbnails/pinigu-konvertavimas.png"
+                  src="/thumbnails/pinigu-konvertavimas.jpg"
                   alt="Pinigų konvertavimas"
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                 />
