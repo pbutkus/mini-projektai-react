@@ -1,4 +1,4 @@
-import Planai from "../components/SandelioPlanai.tsx/Planai";
+import Planai from "../components/SandelioPlanai/Planai";
 
 const SandelioPlanai = () => {
   return (

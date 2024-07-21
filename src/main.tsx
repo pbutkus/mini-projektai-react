@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import FotoGalerija from "./pages/FotoGalerija.tsx";
 import SandelioPlanai from "./pages/SandelioPlanai.tsx";
+import PrekiuKrepselis from "./pages/PrekiuKrepselis.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/sandelio-planai",
     element: <SandelioPlanai />,
+  },
+  {
+    path: "/prekiu-krepselis",
+    element: <PrekiuKrepselis />,
   },
 ]);
 

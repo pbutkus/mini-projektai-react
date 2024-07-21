@@ -37,6 +37,21 @@ function App() {
                 <h2 className="font-semibold">Sandelio planai/tabai</h2>
               </div>
             </a>
+            <a
+              href="/prekiu-krepselis"
+              className="flex flex-col border border-neutral-200 shadow-md group"
+            >
+              <div className="w-full aspect-video overflow-hidden">
+                <img
+                  src="/thumbnails/prekiu-krepselis.png"
+                  alt="Sandelio planai/tabai"
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="font-semibold">Prekių krepšelis</h2>
+              </div>
+            </a>
           </div>
         </div>
       </div>
