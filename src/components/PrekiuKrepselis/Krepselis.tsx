@@ -58,26 +58,32 @@ const Krepselis = () => {
 
   return (
     <div className="bg-white rounded-lg px-12 pt-12 pb-8">
-      <table className="w-full">
-        <Header />
-        <tbody className="divide-y divide-[#00000026]">
-          {products.map((produktas) => (
-            <ProductInfo
-              key={produktas.id}
-              title={produktas.title}
-              price={produktas.price}
-              amount={produktas.amount}
-              img_src={produktas.img_src}
-              updateAmount={(amountChange: number) =>
-                productAmountUpdateHandler(produktas.title, amountChange)
-              }
-              removeFromCart={() => removeFromCartHandler(produktas.title)}
-            />
-          ))}
-        </tbody>
-      </table>
-      <div className="w-full h-[2px] my-4 bg-[#D9D9D9]"></div>
-      <Footer total={total} updateTotal={totalUpdateHandler} />
+      {products.length > 0 ? (
+        <div>
+          <table className="w-full">
+            <Header />
+            <tbody className="divide-y divide-[#00000026]">
+              {products.map((produktas) => (
+                <ProductInfo
+                  key={produktas.id}
+                  title={produktas.title}
+                  price={produktas.price}
+                  amount={produktas.amount}
+                  img_src={produktas.img_src}
+                  updateAmount={(amountChange: number) =>
+                    productAmountUpdateHandler(produktas.title, amountChange)
+                  }
+                  removeFromCart={() => removeFromCartHandler(produktas.title)}
+                />
+              ))}
+            </tbody>
+          </table>
+          <div className="w-full h-[2px] my-4 bg-[#D9D9D9]"></div>
+          <Footer total={total} updateTotal={totalUpdateHandler} />
+        </div>
+      ) : (
+        <h2 className="font-bold">Krepšelis tuščias...</h2>
+      )}
     </div>
   );
 };
