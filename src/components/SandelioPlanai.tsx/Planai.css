@@ -1,0 +1,7 @@
+.active {
+  @apply bg-gradient-to-b from-transparent to-[#3E941F26] text-[#3E941F] after:absolute after:w-full after:h-[3px] after:bg-[#3E941F] after:bottom-[-2px];
+}
+
+li:hover {
+  @apply after:absolute after:w-full after:h-[3px] after:bg-[#3E941F] after:bottom-[-2px];
+}
