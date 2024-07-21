@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        "pt-sans": ["PT Sans", "sans-serif"],
       },
     },
   },

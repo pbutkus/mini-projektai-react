@@ -6,6 +6,7 @@ import "./index.css";
 import FotoGalerija from "./pages/FotoGalerija.tsx";
 import SandelioPlanai from "./pages/SandelioPlanai.tsx";
 import PrekiuKrepselis from "./pages/PrekiuKrepselis.tsx";
+import PiniguKonvertavimas from "./pages/PiniguKonvertavimas.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/prekiu-krepselis",
     element: <PrekiuKrepselis />,
+  },
+  {
+    path: "/pinigu-konvertavimas",
+    element: <PiniguKonvertavimas />,
   },
 ]);
 

@@ -14,7 +14,7 @@ const Planai = () => {
   return (
     <div className="flex justify-center font-montserrat">
       <div className="container mt-[244px]">
-        <ul className="flex border-b border-[#C4C4C4] font-semibold text-lg text-[#666666] mb-[69px]">
+        <ul className="flex border-b border-[#C4C4C4] font-semibold text-lg text-[#666666] mb-[69px] tabai">
           <li
             onClick={() => tabHandler(1)}
             className={`relative w-[300px] h-[48px] flex items-center justify-center cursor-pointer ${
