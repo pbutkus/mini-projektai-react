@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className="flex justify-center">
-        <div className="container flex flex-col justify-center items-center gap-12 my-12">
+        <div className="container flex flex-col justify-center items-center gap-12 my-12 mx-4">
           <h1 className="font-bold text-4xl">MINI PROJEKTAI</h1>
           <div className="grid grid-cols-4 gap-6">
-            <a
-              href="/foto-galerija"
+            <Link
+              to="/foto-galerija"
               className="flex flex-col border border-neutral-200 shadow-md group"
             >
               <div className="w-full aspect-video overflow-hidden">
@@ -21,9 +22,9 @@ function App() {
               <div className="p-4">
                 <h2 className="font-semibold">Foto Galerija</h2>
               </div>
-            </a>
-            <a
-              href="/sandelio-planai"
+            </Link>
+            <Link
+              to="/sandelio-planai"
               className="flex flex-col border border-neutral-200 shadow-md group"
             >
               <div className="w-full aspect-video overflow-hidden">
@@ -36,9 +37,9 @@ function App() {
               <div className="p-4">
                 <h2 className="font-semibold">Sandelio planai/tabai</h2>
               </div>
-            </a>
-            <a
-              href="/prekiu-krepselis"
+            </Link>
+            <Link
+              to="/prekiu-krepselis"
               className="flex flex-col border border-neutral-200 shadow-md group"
             >
               <div className="w-full aspect-video overflow-hidden">
@@ -51,9 +52,9 @@ function App() {
               <div className="p-4">
                 <h2 className="font-semibold">Prekių krepšelis</h2>
               </div>
-            </a>
-            <a
-              href="/prekiu-krepselis"
+            </Link>
+            <Link
+              to="/pinigu-konvertavimas"
               className="flex flex-col border border-neutral-200 shadow-md group"
             >
               <div className="w-full aspect-video overflow-hidden">
@@ -66,7 +67,22 @@ function App() {
               <div className="p-4">
                 <h2 className="font-semibold">Pinigų konvertavimas</h2>
               </div>
-            </a>
+            </Link>
+            <Link
+              to="/automobilio-konfiguratorius"
+              className="flex flex-col border border-neutral-200 shadow-md group"
+            >
+              <div className="w-full aspect-video overflow-hidden">
+                <img
+                  src="/thumbnails/automobilio-konfiguratorius.png"
+                  alt="Automobilio konfigūratorius"
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="font-semibold">Automobilio konfigūratorius</h2>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
