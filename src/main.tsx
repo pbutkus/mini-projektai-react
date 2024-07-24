@@ -7,6 +7,7 @@ import FotoGalerija from "./pages/FotoGalerija.tsx";
 import SandelioPlanai from "./pages/SandelioPlanai.tsx";
 import PrekiuKrepselis from "./pages/PrekiuKrepselis.tsx";
 import PiniguKonvertavimas from "./pages/PiniguKonvertavimas.tsx";
+import AutomobilioKonfiguratorius from "./pages/AutomobilioKonfiguratorius.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/pinigu-konvertavimas",
     element: <PiniguKonvertavimas />,
+  },
+  {
+    path: "/automobilio-konfiguratorius",
+    element: <AutomobilioKonfiguratorius />,
   },
 ]);
 
