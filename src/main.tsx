@@ -8,6 +8,13 @@ import SandelioPlanai from "./pages/SandelioPlanai.tsx";
 import PrekiuKrepselis from "./pages/PrekiuKrepselis.tsx";
 import PiniguKonvertavimas from "./pages/PiniguKonvertavimas.tsx";
 import AutomobilioKonfiguratorius from "./pages/AutomobilioKonfiguratorius.tsx";
+import Keliones from "./pages/Keliones.tsx";
+import KelionesPagrindinis from "./pages/Keliones/KelionesPagrindinis.tsx";
+import KelionesApieMus from "./pages/Keliones/KelionesApieMus.tsx";
+import KelionesKontaktai from "./pages/Keliones/KelionesKontaktai.tsx";
+import Nenix from "./pages/Nenix.tsx";
+import NenixPagrindinis from "./pages/Nenix/NenixPagrindinis.tsx";
+import NenixApieMus from "./pages/Nenix/NenixApieMus.tsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +40,38 @@ const router = createBrowserRouter([
   {
     path: "/automobilio-konfiguratorius",
     element: <AutomobilioKonfiguratorius />,
+  },
+  {
+    path: "/keliones",
+    element: <Keliones />,
+    children: [
+      {
+        path: "/keliones/",
+        element: <KelionesPagrindinis />,
+      },
+      {
+        path: "/keliones/apie-mus",
+        element: <KelionesApieMus />,
+      },
+      {
+        path: "/keliones/kontaktai",
+        element: <KelionesKontaktai />,
+      },
+    ],
+  },
+  {
+    path: "/nenix",
+    element: <Nenix />,
+    children: [
+      {
+        path: "/nenix/",
+        element: <NenixPagrindinis />,
+      },
+      {
+        path: "/nenix/apie-mus",
+        element: <NenixApieMus />,
+      },
+    ],
   },
 ]);
 

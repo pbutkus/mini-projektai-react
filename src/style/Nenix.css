@@ -1,0 +1,18 @@
+.nenix {
+  @apply font-dm-sans;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-roboto-serif;
+  }
+
+  .nenix-hero {
+    background: url("/nenix/nenix_hero_bg.png"), #0c1a3a;
+    background-blend-mode: multiply;
+    background-position: center;
+  }
+}

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.keliones-hero {
+  background-image: url("/keliones/hero_bg.jpeg");
+}
+
+.why-choose-us {
+  background-image: url("/keliones/apiemus.png");
+}
