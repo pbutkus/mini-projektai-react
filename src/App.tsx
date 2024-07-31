@@ -83,6 +83,36 @@ function App() {
                 <h2 className="font-semibold">Automobilio konfigūratorius</h2>
               </div>
             </Link>
+            <Link
+              to="/keliones"
+              className="flex flex-col border border-neutral-200 shadow-md group"
+            >
+              <div className="w-full aspect-video overflow-hidden">
+                <img
+                  src="/thumbnails/keliones.png"
+                  alt="Kelionės"
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="font-semibold">Kelionės</h2>
+              </div>
+            </Link>
+            <Link
+              to="/nenix"
+              className="flex flex-col border border-neutral-200 shadow-md group"
+            >
+              <div className="w-full aspect-video overflow-hidden">
+                <img
+                  src="/thumbnails/nenix.png"
+                  alt="Nenix"
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="font-semibold">Nenix</h2>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

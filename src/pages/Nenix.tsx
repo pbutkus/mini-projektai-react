@@ -5,7 +5,7 @@ import NenixNav from "../components/Nenix/NenixNav";
 
 const Nenix = () => {
   return (
-    <div className="nenix">
+    <div className="nenix relative">
       <NenixNav />
       <Outlet />
       <NenixFooter />

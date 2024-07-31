@@ -15,6 +15,10 @@ import KelionesKontaktai from "./pages/Keliones/KelionesKontaktai.tsx";
 import Nenix from "./pages/Nenix.tsx";
 import NenixPagrindinis from "./pages/Nenix/NenixPagrindinis.tsx";
 import NenixApieMus from "./pages/Nenix/NenixApieMus.tsx";
+import NenixPortfolio from "./pages/Nenix/NenixPortfolio.tsx";
+import NenixKontaktai from "./pages/Nenix/NenixKontaktai.tsx";
+import NenixProjektas from "./pages/Nenix/portfolio/NenixProjektas.tsx";
+import NenixPortfolioWrapper from "./components/Nenix/NenixPortfolioWrapper.tsx";
 
 const router = createBrowserRouter([
   {
@@ -64,12 +68,30 @@ const router = createBrowserRouter([
     element: <Nenix />,
     children: [
       {
-        path: "/nenix/",
+        index: true,
         element: <NenixPagrindinis />,
       },
       {
-        path: "/nenix/apie-mus",
+        path: "apie-mus",
         element: <NenixApieMus />,
+      },
+      {
+        path: "portfolio",
+        element: <NenixPortfolioWrapper />,
+        children: [
+          {
+            index: true,
+            element: <NenixPortfolio />,
+          },
+          {
+            path: "projektas",
+            element: <NenixProjektas />,
+          },
+        ],
+      },
+      {
+        path: "kontaktai",
+        element: <NenixKontaktai />,
       },
     ],
   },

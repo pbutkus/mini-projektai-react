@@ -199,7 +199,7 @@ const NenixPagrindinis = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center overflow-hidden">
         <div className="container px-6 mt-28">
           <div className="flex flex-col items-center gap-6">
             <h2 className="text-[#FF6600] text-center text-[30px] font-semibold leading-[35.13px]">
